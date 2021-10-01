@@ -5,6 +5,15 @@ body {
   position: relative;
 }
 
+.actLine {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 5px solid #fff;
+  width: 0;
+  transition: left 500ms ease, width 500ms ease;
+}
+
 header {
 
   //.navbar-fixed-top {
