@@ -7,12 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wine</title>
   <link rel="stylesheet" href="/css/app.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <header>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
-        <div class="logo">
+        <div class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
           WebSiteName
         </div>
         <div>
@@ -26,25 +33,95 @@
           </div>
         </div>
       </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand navbar-light ">
+     <div class="container-fluid">
+      <a class="navbar-brand " href="#">
+        <img src="img/logo.svg"  alt="Logo"/>
+      </a>
+      <div class="collapse navbar-collapse mr-0">
+        <ul class="navbar-nav ">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Opportunities</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Investing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Regions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Roadmap </a>
+          </li>
+        </ul>
+      </div>
+     </div>
     </nav>
+    <div class="container-fluid">
+      <div class="row-3">
+        <div class="col">
+          <h2 class="title">Safe wine-investing
+          on the first stage!</h2>
+          <p class="header_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> <img class="bg_image" src="img/laptop.svg" />
+          <button class="button">button</button>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          
+        </div>
+      </div>
+      
+      
+    </div>
   </header>
 
   <main>
-    <div id="section1" class="container-fluid">
+    <!-- <div id="section1" class="container-fluid">
       <h1>Section 1</h1>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
         the navigation bar while scrolling!</p>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
         the navigation bar while scrolling!</p>
-    </div>
+    </div> -->
     <div id="section2" class="container-fluid">
-      <h1>Section 2</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-        the navigation bar while scrolling!</p>
+      <h1>Winessy gives an opportunity</h1>
+      <div class="row">
+        <div class="c1 col-sm-6 col-lg-4">
+          <img  class="circle" src="img/winessy_gives1.svg" />
+          <img  src="img/wines_bottle.svg" />
+          <p class="about_winessy">To get a unique token for 1 bottle of vintage wine when the price is the most profitable.</p>
+        </div>
+        <div class="c2 col-sm-6 col-lg-4">
+          <img class="circle" src="img/winessy_gives2.svg" />
+          <p class="about_winessy">To own this token while the wine is stored in chateau appropriate conditions, exchange a token as a digital asset on the growth of the price or claim the direct wine delivery.</p>
+        </div>
+        <div class="c3 col-sm-6 col-lg-4">
+          <img class="circle" src="img/winessy_gives3.svg" />
+          <p class="about_winessy">To find all the up-to-date statistics about wine price rises and the percentage of its growth.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="c1 col-sm-6 col-lg-4">
+          <img class="circle" src="img/winessy_gives4.svg" />
+          <p class="about_winessy">To get a unique token for 1 bottle of vintage wine when the price is the most profitable.</p>
+        </div>
+        <div class="c2 col-sm-6 col-lg-4">
+          <img class="circle" src="img/winessy_gives5.svg" />
+          <p class="about_winessy">To own this token while the wine is stored in chateau appropriate conditions, exchange a token as a digital asset on the growth of the price or claim the direct wine delivery.</p>
+        </div>
+        <!-- <div class="c3 col-sm-6 col-lg-4">
+          <img src="img/winessy_gives3.svg" />
+          <p>To find all the up-to-date statistics about wine price rises and the percentage of its growth.</p>
+        </div> -->
+      </div>
     </div>
-    <div id="section3" class="container-fluid">
+    <!-- <div id="section3" class="container-fluid">
       <h1>Section 3</h1>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
         the navigation bar while scrolling!</p>
@@ -64,14 +141,15 @@
         the navigation bar while scrolling!</p>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
         the navigation bar while scrolling!</p>
-    </div>
+    </div> -->
   </main>
-  <footer>
+  <!-- <footer>
     <div class="container">
       footer
     </div>
   </footer>
   <script src="/js/jquery.js"></script>
+  <script src="/js/wow.js"></script>
   <script src="/js/app.js"></script>
 </body>
 </html>
