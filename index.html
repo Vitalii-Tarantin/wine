@@ -6,43 +6,48 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wine</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/app.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="wine pt-3 pt-md-5">
       <div class="container">
-          <header class="row justify-content-between mb-4">
-              <div class="col-12 col-sm-3 mb-3 mb-sm-0 logo">
-                  <a href="#"><img alt="Site logo" class="mx-auto mx-sm-0" src="img/logo.svg"></a>
+          <header class="d-flex align-items-center justify-content-between mb-4">
+              <div class="mb-3 mb-sm-0 logo">
+                  <img alt="Site logo" class="mx-auto mx-sm-0" src="img/logo.svg">
               </div>
-              <nav class="col-12 col-sm-9 hero__nav">
-                  <ul class="wine__nav__list row  justify-content-center justify-content-sm-end align-items-center mb-0">
-                      <li class="col-auto"><a class="wine__link" href="#section1">Home</a></li>
-                      <li class="col-auto"><a class="wine__link" href="#section2">Opportunities</a></li>
-                      <li class="col-auto"><a class="wine__link" href="#section3">Investing</a></li>
-                      <li class="col-auto"><a class="wine__link" href="#section4">Regions</a></li>
-                      <li class="col-auto"><a class="wine__link" href="#section5">Roadmap </a></li>
-                  </ul>
-              </nav>
+            <nav class="navbar navbar-expand-lg navbar-light header_nav">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="wine__nav__list row justify-content-center justify-content-sm-end align-items-center mb-0">
+                    <li class="col-auto"><a class="act wine__link" href="#section1">Home</a></li>
+                    <li class="col-auto"><a class="wine__link" href="#section2">Opportunities</a></li>
+                    <li class="col-auto"><a class="wine__link" href="#section3">Investing</a></li>
+                    <li class="col-auto"><a class="wine__link" href="#section4">Regions</a></li>
+                    <li class="col-auto"><a class="wine__link last" href="#section5">Roadmap </a></li>
+                </ul>
+                <!--<div class="actLine"></div>-->
+              </div>
+            </nav>
+            <span class="navbar-toggler d-lg-none collapsed" type="button" aria-expanded="false"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+              &equiv;
+            </span>
           </header>
-          <div class="col-sm-12 col-lg-6 mb-5 wine__title">
-              <div class="row justify-content-between">
-                  <h1 class="mb-3 col-12">Safe wine-investing
-                    on the first stage!</h1>
-                  <p class="col-12">Your easy way to start investing in wine. The first mixture of smart technology and long-standing traditions.</p>
-                     <!-- <div   class="row justify-content-end pt-3">
-                      <img alt="Laptop image" src="/img/laptop.svg">
-                    </div> -->
-                  <div class="col-sm-12 col-lg-6">
-                      <div class="row">
-                          <button class="wine__btn col-12 col-sm-5 p-2 mb-3 mb-sm-0">Learn more
-                          </button>
-                      </div>
-                  </div>
-              </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 wine__title">
+            <h1 class="mb-3 wow fadeInLeft">Safe wine-investing
+              on the first stage!</h1>
+            <p>Your easy way to start investing in wine. The first mixture of smart technology and
+              long-standing traditions.</p>
+            <button class="wine__btn mb-3 mb-sm-0">Learn more</button>
           </div>
+          <div class="d-none d-lg-flex col-lg-6 position-relative">
+            <div class="laptop wow fadeInRight">
+              <img alt="Laptop image" src="/img/laptop.svg">
+            </div>
+          </div>
+        </div>
       </div>
   </div>
 
@@ -61,11 +66,14 @@
         <p>The unique Winessy token for a vintage Grand Cru Classe wine bottle is a new way to get your premium wine for consumption, collecting or exchanging as a digital asset. To make your wine-investing easy and profitable, the whole life cycle of wine is tracked within the blockchain. Each harvest is evaluated by the committee while all the wine sorts get marks from professional sommeliers and wine critics. </p>
       </div>
     </div>
-    <
   </main>
 
   <script src="/js/jquery.js"></script>
-  <script src="/js/wow.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/paralax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script>new WOW().init();</script>
   <script src="/js/app.js"></script>
 </body>
 </html>

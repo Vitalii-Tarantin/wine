@@ -1,3 +1,4 @@
+@import 'wow.css';
 @import 'variables';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
@@ -8,7 +9,8 @@
 body {
   position: relative;
   font-family: 'Roboto', sans-serif;
- }
+  overflow-x: hidden;
+}
 
 ul {
   padding: 0;
@@ -21,20 +23,20 @@ h1 {
   font-size: 48px;
   line-height: 56px;
   color: #232935;
- }
+}
 
- p {
+p {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  
- }
+}
+
 .actLine {
   position: absolute;
   left: 0;
   bottom: 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 2px solid $red;
   width: 0;
   transition: left 500ms ease, width 500ms ease;
 }
@@ -52,49 +54,141 @@ a {
   background: center no-repeat url("../img/background_header.svg");
   background-size: cover;
   position: relative;
-  overflow: hidden;
+  padding-bottom: 40px;
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+      width: auto;
+      position: static;
+    }
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    background-color: #fff;
+    z-index: 20;
+    padding: 76px 0 50px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 13px 3px #c1bdbd;
+
+    @include media-breakpoint-up(lg) {
+      position: static;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
+      width: auto;
+      padding: 0;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    outline: none !important;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    line-height: 36px;
+    z-index: 50;
+    width: 46px;
+    background: $red;
+  }
 
   &__nav {
 
     &__list {
+      position: relative;
+      flex-direction: column;
+
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+      }
 
       li {
-        margin: 0;
+        position: relative;
+        margin: 0 0 20px;
+        padding: 0;
         background: transparent;
         transition: all 0.2s;
         border-radius: 2px;
-        overflow: hidden;
 
-        &:hover {
-          font-weight: bold;
+        @include media-breakpoint-up(lg) {
+          margin: 0 40px 0 0;
+          overflow: hidden;
+
+          &.last {
+            margin-right: 0;
+          }
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -10px;
+          height: 2px;
+          width: 20px;
+          background: $red;
+          transform: translateX(-50%);
+
+          @include media-breakpoint-up(lg) {
+            display: none;
+          }
+        }
+
+        a {
           color: #232935;
+          font-weight: 600;
+          font-size: 20px;
+
+          @include media-breakpoint-up(lg) {
+            font-size: 14px;
+          }
+
+          &:hover {
+            text-decoration: none;
+            color: #232935;
+          }
         }
       }
     }
   }
 
-
   &__title {
     width: 450px;
-    h1 {
-      margin-top: 119px;
-      width: 450px;
-      height: 72px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 140px;
     }
-    
+
+    h1 {
+      margin-top: 40px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 119px;
+      }
+    }
 
     p {
       margin-top: 40px;
       color: rgba(35, 41, 53, 0.5);
-      width: 450px;
-      height: 72px;
     }
   }
 
   &__btn {
-    width: 160px;
-    height: 42px;
-    background: #FF4A3D;;
+    padding: 5px 30px;
+    background: $red;
     border: 1px solid #fff;
     border-radius: 8px;
     overflow: hidden;
@@ -103,7 +197,17 @@ a {
     transition: all 0.2s;
 
     &:hover, &:focus {
-      box-shadow: 0px 0px 30px rgba(43, 40, 40, 0.3);
+      background: #8e2428;
+    }
+  }
+
+  .laptop {
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+
+    img {
+      width: 100%;
     }
   }
 }
