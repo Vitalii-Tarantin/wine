@@ -1,13 +1,21 @@
+//WOW
+new WOW().init();
+
+//Paralax
+let scene = document.getElementById('scene');
+let parallaxInstance = new Parallax(scene);
+
+//Header line
 $('.wine__nav__list').each(function(){
-  var actItem = $(this).find('.act');
+  let actItem = $(this).find('.act');
   if(!actItem){
     return;
   }
 
-  var line = $('<div class="actLine"></div>');
+  let line = $('<div class="actLine"></div>');
   $(this).append(line);
 
-  var setLineCss = function(node){
+  let setLineCss = function(node){
     line.css({
       width: node.css('width'),
       left: node[0].offsetLeft
