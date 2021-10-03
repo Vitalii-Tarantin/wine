@@ -2,8 +2,12 @@
 new WOW().init();
 
 //Paralax
-let scene = document.getElementById('scene');
-let parallaxInstance = new Parallax(scene);
+let scene1 = document.getElementById('scene1');
+let parallaxInstance1 = new Parallax(scene1);
+let scene2 = document.getElementById('scene2');
+let parallaxInstance2 = new Parallax(scene2);
+let scene3 = document.getElementById('scene3');
+let parallaxInstance3 = new Parallax(scene3);
 
 //Header line
 $('.wine__nav__list').each(function(){
@@ -17,7 +21,7 @@ $('.wine__nav__list').each(function(){
 
   let setLineCss = function(node){
     line.css({
-      width: node.css('width'),
+      width: parseInt(node.css('width')) / 2 + 'px',
       left: node[0].offsetLeft
     });
   };
@@ -31,4 +35,18 @@ $('.wine__nav__list').each(function(){
   $(this).on('mouseleave', function(){
     setLineCss(actItem);
   });
+});
+
+//Smooth scroll
+$('.wine__nav__list a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    let target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
 });
