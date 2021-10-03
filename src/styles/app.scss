@@ -758,11 +758,14 @@ p {
 }
 
 #section8 {
-
   .block {
-    padding: 10px 30px;
-    background: url("../img/background_header.svg") no-repeat center/cover;
-    border-radius: 30px;
+  position: relative;
+  width: 1140px;
+  height: 398px;
+  padding: 10px 30px;
+  background: url("../img/background_header.svg") no-repeat center;
+  background-size: cover;
+  border-radius: 30px;
 
     @include media-breakpoint-up(lg) {
       height: 398px;
@@ -783,18 +786,31 @@ p {
   .email__user{
     width: 300px;
     height: 54px;
+    padding-left: 20px;
     border: none;
     border-radius: 8px;
     background: #FFFFFF;
-    
+    &:active,
+    &:hover,
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
   }
   .inp_name {
     width: 300px;
     height: 54px;
+    padding-left: 20px;
     border: none;
     border-radius: 8px;
     background: #FFFFFF;
-    text-align:justify;
+    text-align: justify;
+    &:active,
+    &:hover,
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
   }
   .sub__btn{
     width: 300px;
@@ -814,7 +830,11 @@ p {
     }
   }
   .arrow {
-    border: none;
+    position: absolute;
+    left: 97.5%;
+    right: 0;
+    top: 43%;
+    bottom: 0;
     background: #FFFFFF;
     flex-shrink: 0;
     display: flex;
@@ -881,11 +901,6 @@ p {
     border-bottom: 2px solid rgba(177, 186, 209, 0.3);
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-
- 
-  @include media-breakpoint-up(lg) {
-    margin-bottom: 80px;
   }
 
   .heading {
