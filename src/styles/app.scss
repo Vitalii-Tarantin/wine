@@ -76,6 +76,13 @@ p {
     font-size: 18px;
   }
 }
+.line {
+  width: 1140px;
+  height: 1px;
+  border-bottom: 2px solid rgba(177, 186, 209, 0.3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .wine {
   background: center no-repeat url("../img/background_header.svg");
@@ -246,7 +253,11 @@ p {
   @include media-breakpoint-up(lg) {
     padding: 117px 0 0;
     margin-bottom: 80px;
-    border-bottom: 1px solid rgba(177, 186, 209, 0.3);
+    // border-bottom: 1px solid rgba(177, 186, 209, 0.3);
+  }
+
+  .line {
+    margin-top: 40px;
   }
   .content {
     margin-bottom: 30px;
@@ -703,19 +714,15 @@ p {
 }
 
 #section8 {
+  .container {
   width: 1140px;
   height: 398px;
   background: url("../img/background_header.svg") no-repeat center;
   background-size: cover;
   border-radius: 30px;
-
+  }
   .text {
     color: rgba(35, 41, 53, 0.5);
-
-    @include media-breakpoint-up(lg) {
-      margin: 75px 0 40px;
-      font-size: 16px;
-    }
   }
 
   .form__inline {
@@ -723,6 +730,7 @@ p {
     width: 1140px;
     height: 398px;
     margin-top: 55px;
+    
 }
   .email__user{
     width: 300px;
@@ -774,15 +782,11 @@ p {
   }
   .heading {
     margin-bottom: 20px;
-
-    @include media-breakpoint-up(lg) {
-      margin-bottom: 80px;
-    }
   }
 }
 
 #footer {
-  margin-bottom: 20px;
+  
   .footer__nav {
     margin-top: 90px;
   }
@@ -821,6 +825,14 @@ p {
       width: 24px;
       height: 24px;
     }
+  }
+
+  .line {
+    width: 1140px;
+    height: 1px;
+    border-bottom: 2px solid rgba(177, 186, 209, 0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
  
