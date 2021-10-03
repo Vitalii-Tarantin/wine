@@ -324,6 +324,53 @@ p {
   }
 }
 
+#section3{
+
+  .content {
+    margin-bottom: 162px;
+  }
+  .img5,
+  .img6,
+  .img7 {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .img5{
+    img{
+      position: absolute;
+      top: 40px;
+    }
+  }
+  .img6{
+    img{
+      position: absolute;
+      left: 220px;
+    }
+  }
+  .img7{
+    position: absolute;
+    top: 116px;
+    left: 92px;
+  }
+  .heading {
+    margin: 40px 0;
+
+    @include media-breakpoint-up(lg) {
+      margin: 228px 0 40px;
+    }
+  }
+  .text {
+    color: #232935;
+    margin: 40px 0;
+
+    @include media-breakpoint-up(lg) {
+      margin: 75px 0 40px;
+      font-size: 16px;
+    }
+  }
+}
+
 #section4 {
   position: relative;
   margin-bottom: 50px;
