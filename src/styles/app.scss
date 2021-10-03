@@ -248,6 +248,9 @@ p {
     margin-bottom: 80px;
     border-bottom: 1px solid rgba(177, 186, 209, 0.3);
   }
+  .content {
+    margin-bottom: 30px;
+  }
 
   .img1,
   .img2 {
@@ -408,7 +411,52 @@ p {
 
 #section5 {
   padding-bottom: 80px;
+  background: url("..//img/bg_section5.svg") no-repeat right top/contain;
+
+
+  @include media-breakpoint-up(lg) {
+    padding: 117px 0 0;
+    margin-bottom: 80px;
+  }
+.content {
+  margin-bottom: 70px;
 }
+  .img3,
+  .img4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .img4 {
+
+    img {
+      position: absolute;
+      left: 200px;
+      
+    }
+  }
+  .heading {
+    margin: 20px 0;
+
+    @include media-breakpoint-up(lg) {
+      // margin: 228px 0 40px;
+    }
+  }
+
+  .text {
+    font-size: 18px;
+    color: #232935;
+    margin: 40px 0;
+
+    @include media-breakpoint-up(lg) {
+      // margin: 75px 0 40px;
+      // font-size: 16px;
+    }
+  }
+  
+
+}
+
 
 #section6 {
   position: relative;
