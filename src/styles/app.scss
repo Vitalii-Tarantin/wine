@@ -76,6 +76,13 @@ p {
     font-size: 18px;
   }
 }
+.line {
+  width: 1140px;
+  height: 1px;
+  border-bottom: 2px solid rgba(177, 186, 209, 0.3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .wine {
   background: center no-repeat url("../img/background_header.svg");
@@ -246,7 +253,14 @@ p {
   @include media-breakpoint-up(lg) {
     padding: 117px 0 0;
     margin-bottom: 80px;
-    border-bottom: 1px solid rgba(177, 186, 209, 0.3);
+    // border-bottom: 1px solid rgba(177, 186, 209, 0.3);
+  }
+
+  .line {
+    margin-top: 40px;
+  }
+  .content {
+    margin-bottom: 30px;
   }
 
   .img1,
@@ -317,6 +331,53 @@ p {
     img {
       width: 32px;
       height: 32px;
+    }
+  }
+}
+
+#section3{
+
+  .content {
+    margin-bottom: 162px;
+  }
+  .img5,
+  .img6,
+  .img7 {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .img5{
+    img{
+      position: absolute;
+      top: 40px;
+    }
+  }
+  .img6{
+    img{
+      position: absolute;
+      left: 220px;
+    }
+  }
+  .img7{
+    position: absolute;
+    top: 116px;
+    left: 92px;
+  }
+  .heading {
+    margin: 40px 0;
+
+    @include media-breakpoint-up(lg) {
+      margin: 228px 0 40px;
+    }
+  }
+  .text {
+    color: #232935;
+    margin: 40px 0;
+
+    @include media-breakpoint-up(lg) {
+      margin: 75px 0 40px;
+      font-size: 16px;
     }
   }
 }
@@ -408,6 +469,48 @@ p {
 
 #section5 {
   padding-bottom: 80px;
+  background: url("..//img/bg_section5.svg") no-repeat right top/contain;
+
+
+  @include media-breakpoint-up(lg) {
+    padding: 117px 0 0;
+    margin-bottom: 80px;
+  }
+.content {
+  margin-bottom: 70px;
+}
+  .img3,
+  .img4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .img4 {
+
+    img {
+      position: absolute;
+      left: 200px;
+      
+    }
+  }
+  .heading {
+    margin: 20px 0;
+
+    @include media-breakpoint-up(lg) {
+      margin: 228px 0 40px;
+    }
+  }
+
+  .text {
+    font-size: 18px;
+    color: #232935;
+    margin: 40px 0;
+
+    @include media-breakpoint-up(lg) {
+      margin: 75px 0 40px;
+      font-size: 16px;
+    }
+  }
 }
 
 #section6 {
@@ -594,7 +697,7 @@ p {
     }
 
     .position {
-      margin-botton: 20px;
+      margin-bottom: 20px;
       font-size: 16px;
       color: rgba(35, 41, 53, 0.5);
 
@@ -611,8 +714,128 @@ p {
 }
 
 #section8 {
-  margin-bottom: 20px;
+  .container {
+  width: 1140px;
+  height: 398px;
+  background: url("../img/background_header.svg") no-repeat center;
+  background-size: cover;
+  border-radius: 30px;
+  }
+  .text {
+    color: rgba(35, 41, 53, 0.5);
+  }
 
+  .form__inline {
+    display: flex;
+    width: 1140px;
+    height: 398px;
+    margin-top: 55px;
+    
+}
+  .email__user{
+    width: 300px;
+    height: 54px;
+    border: none;
+    border-radius: 8px;
+    background: #FFFFFF;
+    
+  }
+  .inp_name {
+    width: 300px;
+    height: 54px;
+    border: none;
+    border-radius: 8px;
+    background: #FFFFFF;
+    text-align:justify;
+  }
+  .sub__btn{
+    width: 300px;
+    height: 54px;
+    background: #FF4A3D;
+    padding: 5px 30px;
+    background: $red;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover, &:focus {
+      background: #8e2428;
+    }
+  }
+  .arrow {
+    border: none;
+    background: #FFFFFF;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 30px rgba(177, 186, 209, 0.3);
+    border: 16px solid #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .heading {
+    margin-bottom: 20px;
+  }
+}
+
+#footer {
+  
+  .footer__nav {
+    margin-top: 90px;
+  }
+  .block {
+    margin-top: 66px;
+    margin-bottom: 40px;
+  }
+  .row-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(35, 41, 53, 0.5);
+    .colortext {
+      color: #FF4A3D;;
+    }
+   
+  }
+  .circle {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 30px rgba(177, 186, 209, 0.3);
+    border: 16px solid #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+    @include media-breakpoint-up(lg) {
+      margin-right: 20px;
+      width: 64px;
+      height: 64px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .line {
+    width: 1140px;
+    height: 1px;
+    border-bottom: 2px solid rgba(177, 186, 209, 0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+ 
   @include media-breakpoint-up(lg) {
     margin-bottom: 80px;
   }
@@ -624,4 +847,6 @@ p {
       margin-bottom: 80px;
     }
   }
+
 }
+  
