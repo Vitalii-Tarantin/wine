@@ -28,7 +28,7 @@
     <div class="wine pt-3 pt-md-5">
       <div class="container">
         <header class="d-flex align-items-center justify-content-between mb-4">
-          <div class="mb-3 mb-sm-0 logo">
+          <div class="logo">
             <img alt="Site logo" class="mx-auto mx-sm-0" src="img/logo.svg">
           </div>
           <nav class="navbar navbar-expand-lg navbar-light header_nav">
@@ -40,13 +40,23 @@
                 <li class="col-auto"><a class="wine__link" href="#section4">Regions</a></li>
                 <li class="col-auto"><a class="wine__link last" href="#section5">Roadmap </a></li>
               </ul>
+
+              <div class="social-media d-flex d-lg-none align-items-center justify-content-center">
+                <a target="_blank" href="#"> <img class="inon mr-2" src="/img/linkedin.svg" alt="linkedin"></a>
+                <a target="_blank" href="#"> <img class="inon mr-2" src="/img/facebook.svg" alt="facebook"></a>
+                <a target="_blank" href="#"> <img class="inon" src="/img/twitter.svg" alt="twitter"></a>
+              </div>
             </div>
           </nav>
-          <span class="navbar-toggler d-lg-none collapsed" type="button" aria-expanded="false"
+          <div class="navbar-toggler d-lg-none collapsed" type="button" aria-expanded="false"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent">
-            &equiv;
-          </span>
+           <div class="burger" onclick="changeClass(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
         </header>
       </div>
       <div class="container container-sm">
@@ -311,23 +321,26 @@
     </section>
 
     <section id="section8">
-      <div class="container container-sm">
-        <h2 class="heading wow fadeInLeft">Stay tuned</h2>
-        <p class="text">Be the first to catch up with new updates. Start your smart investing with Winessy and enjoy the future benefits from </br> every bottle.</p>
-        <button class="arrow "><a class="act wine__link" href="#section1"><img class="up__arrow" src="img/up_arrow.svg" alt="up arrow"></a></button>
-        <div class="row">
-          <div class="col-lg-4">
-             <form class="form-inline">
-              <div class="form-group mr-0 mb-2">
-                <label for="email" class="sr-only">Email</label>
-                <input type="text"  class="email__user" id="email" placeholder="E-mail address">
-              </div>
-              <div class="form-group mx-sm-3 mb-2">
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" class="inp_name" id="name" placeholder="Name">
-              </div>
-              <button type="submit" class="sub__btn mb-2">Subscribe</button>
-            </form>
+      <div class="container">
+        <div class="block">
+          <h2 class="heading wow fadeInLeft">Stay tuned</h2>
+          <p class="text">Be the first to catch up with new updates. Start your smart investing with Winessy and enjoy
+            the future benefits from </br> every bottle.</p>
+          <button class="arrow wow fadeIn">
+            <img class="up__arrow" src="img/up_arrow.svg" alt="up arrow">
+          </button>
+          <form class="form-inline">
+            <div class="form-group mr-0">
+              <label for="email" class="sr-only">Email</label>
+              <input type="text" class="email__user" id="email" placeholder="E-mail address">
+            </div>
+            <div class="form-group">
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" class="inp_name" id="name" placeholder="Name">
+            </div>
+            <button type="submit" class="sub__btn">Subscribe</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -336,22 +349,27 @@
     <div class="container">
       <div class="footer">
         <div class="footer__nav">
-          <div class="d-flex  align-items-center justify-content-lg-between  mb-4">
+          <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-between">
             <div class="mb-3 mb-sm-0 logo">
-                <img alt="footer logo" class="mx-auto mx-sm-0" src="img/footer_logo.svg">
+              <img alt="footer logo" class="mx-auto mx-sm-0" src="img/footer_logo.svg">
             </div>
-          <nav class="navbar navbar-expand-lg navbar-light  header_nav">
-            <div>
-              <ul class="wine__nav__list row justify-content-center justify-content-sm-end align-items-center mb-0">
+            <div class="d-flex d-lg-none justify-content-end social">
+              <a target="_blank" href="#"> <img class="inon mr-2" src="/img/linkedin.svg" alt="linkedin"></a>
+              <a target="_blank" href="#"> <img class="inon mr-2" src="/img/facebook.svg" alt="facebook"></a>
+              <a target="_blank" href="#"> <img class="inon" src="/img/twitter.svg" alt="twitter"></a>
+            </div>
+            <nav class="d-none d-lg-flex navbar navbar-expand-lg navbar-light header_nav">
+              <div>
+                <ul class="wine__nav__list row justify-content-center justify-content-sm-end align-items-center mb-0">
                   <li class="col-auto"><a class="act wine__link" href="#section1">Home</a></li>
                   <li class="col-auto"><a class="wine__link" href="#section2">Opportunities</a></li>
                   <li class="col-auto"><a class="wine__link" href="#section3">Investing</a></li>
                   <li class="col-auto"><a class="wine__link" href="#section4">Regions</a></li>
                   <li class="col-auto"><a class="wine__link last" href="#section5">Roadmap </a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+                </ul>
+              </div>
+            </nav>
+          </div>
       </div>
     </div>
     <div class="row">
@@ -375,17 +393,17 @@
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-end">
+    <div class="d-none d-lg-flex justify-content-end">
       <a target="_blank" href="#"> <img class="inon mr-2" src="/img/linkedin.svg" alt="linkedin"></a>
       <a target="_blank" href="#"> <img class="inon mr-2" src="/img/facebook.svg" alt="facebook"></a>
       <a target="_blank" href="#"> <img class="inon" src="/img/twitter.svg" alt="twitter"></a>
     </div>
     <div class="line"></div>
-    <div class="copyright d-flex justify-content-between">
-    <p class="row-text">Copyright © 2021-2022 Winessy. All rights reserved.</p>
+    <div class="copyright flex-wrap flex-lg-nowrap d-flex flex-column-reverse flex-lg-row align-items-center justify-content-between">
+      <p class="row-text">Copyright © 2021-2022 Winessy. All rights reserved.</p>
       <div class="policy">
-        <a class="row-text mr-3" href="#">Terms & condition</a>
-        <a class="row-text mr-3" href="#">Privacy policy</a>
+        <a class="row-text" href="#">Terms & condition</a>
+        <a class="row-text" href="#">Privacy policy</a>
         <a class="row-text" href="#">Cookies policy</a>
       </div>
     </div>

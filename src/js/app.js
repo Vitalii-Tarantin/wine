@@ -43,6 +43,8 @@ $('.wine__nav__list a[href*="#"]:not([href="#"])').click(function() {
     let target = $(this.hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
     if (target.length) {
+      $('.burger')[0].classList.remove('change')
+      $('header .navbar-collapse').collapse('hide');
       $('html, body').animate({
         scrollTop: target.offset().top
       }, 1000);
@@ -50,3 +52,7 @@ $('.wine__nav__list a[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
+
+function changeClass(x) {
+  x.classList.toggle("change");
+}
