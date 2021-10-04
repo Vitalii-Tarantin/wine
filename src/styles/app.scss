@@ -762,11 +762,10 @@ p {
 
   .container {
     position: relative;
-    width: 1140px;
+    width: 100%;
     height: 398px;
-    padding: 60px 0 0 100px;
+    padding: 60px 80px 80px 100px;
     background: url("../img/background_header.svg") no-repeat center;
-    background-size: cover;
     border-radius: 30px;
     @include media-breakpoint-up(lg) {
       height: 398px;
@@ -781,8 +780,10 @@ p {
     margin-left: 0;
   }
 
-  .form__inline {
+  .input {
     display: flex;
+    position: absolute;
+    justify-content: space-between;
     width: 1140px;
     height: 398px;
     margin-top: 55px;
