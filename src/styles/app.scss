@@ -758,9 +758,11 @@ p {
 }
 
 #section8 {
-  .form {
+
+
+  .container {
     position: relative;
-    width: auto;
+    width: 100%;
     height: 398px;
     padding: 60px 80px 80px 100px;
     background: url("../img/background_header.svg") no-repeat center;
@@ -768,8 +770,8 @@ p {
     @include media-breakpoint-up(lg) {
       height: 398px;
       padding: 60px 100px;
-  }
     }
+  }
   .text {
     color: rgba(35, 41, 53, 0.5);
   }
@@ -850,9 +852,6 @@ p {
     height: 50px;
     margin-right: 10px;
     cursor: pointer;
-    @include media-breakpoint-up(lg) {
-      margin-bottom: 40px;
-    }
   }
   .heading {
     margin-bottom: 20px;
@@ -910,12 +909,12 @@ p {
   }
 
   .line {
-    width: auto;
+    width: 1140px;
     height: 1px;
     border-bottom: 2px solid rgba(177, 186, 209, 0.3);
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  
 
   .heading {
     margin-bottom: 20px;
