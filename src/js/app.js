@@ -52,6 +52,16 @@ $('.wine__nav__list a[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
+// Swiper slider
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  slidesPerView: 1.8,
+  spaceBetween: 40,
+  centeredSlides: true,
+});
 
 function changeClass(x) {
   x.classList.toggle("change");

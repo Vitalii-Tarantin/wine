@@ -30,5 +30,9 @@
     "popper.js": "^1.12.6",
     "rimraf": "^2.6.2"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "swiper": "^7.0.8"
+  }
 }
